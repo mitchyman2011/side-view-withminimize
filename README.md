@@ -1,8 +1,8 @@
 # Side View
 
-An experiment with opening mobile views of pages in the sidebar.
+This is to use the firefox side-view project effectively without having to reopen the window if i can i will add tabbing to this to make this very effective for short work and notetaking in small form factor pc configs 
 
-[**Install from addons.mozilla.org**](https://addons.mozilla.org/en-US/firefox/addon/side-view/)
+[**Install from addons.mozilla.org**](Link when publicly avalible)
 
 ## Installing
 
@@ -21,3 +21,4 @@ This adds a context menu item: **Open in sidebar** or **Open link in sidebar**. 
 ## Credits
 
 [Anthony_f](https://addons.mozilla.org/en-US/firefox/user/Anthony_f/)'s [Sidebar for Google Search](https://addons.mozilla.org/en-US/firefox/addon/sidebar-for-google-search/) inspired this add-on's approach.
+Mozilla team for making the base of the project
