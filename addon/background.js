@@ -79,6 +79,9 @@ async function openUrl(url) {
   }).catch((error) => {
     // If the popup is not open this gives an error, but we don't care
   });
+  let windowInfo = await browser.windows.getCurrent();
+  let windo= windowInfo.WINDOW_ID_CURRENT
+  console.log(windo)
   browser.sidebarAction.setPanel({panel: url});
 }
 
@@ -255,5 +258,22 @@ async function init() {
     showOnboardingBadge();
   }
 }
+browser.commands.onCommand.addListener((command) => {
+  if (browser.sidebarAction.isOpen({})){
+    pan=browser.sidebarAction.getPanel({});
+    //lel=browser.runtime.getURL(sidebar.html);
+    console.log(pan);
+    //console.log(lel);
+    browser.sidebarAction.toggle();
+  }
+  else {
+    browser.sidebarAction.toggle();
+    browser.sidebarAction.setPanel({panel: pan});
+  };
+  });
+  browser.browserAction.onClicked.addListener((OnClickData) => {
+
+    console.log(OnClickData);
+  });
 
 init();

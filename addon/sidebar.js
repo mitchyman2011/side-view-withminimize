@@ -30,6 +30,7 @@ async function init() {
   browser.management.onEnabled.addListener((info) => {
     checkForDark();
   });
+  
 }
 
 init();
